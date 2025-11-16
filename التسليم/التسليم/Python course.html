@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Amr" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>🐍 Python Course Intro</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    .return {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.return a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+}
+
+.return a:hover {
+    text-decoration: underline;
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe873 0%, #306998 100%);
+      background-attachment: fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 38px;
+      color: #306998;
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    .video-placeholder {
+      width: 100%;
+      height: 450px;
+      background-color: #dbe5ec;
+      border: 2px dashed #90a4ae;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #455a64;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      font-size: 18px;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .course-level {
+      background-color: #f9f9f9;
+      padding: 22px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border-left: 6px solid #ffd43b;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-level:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-level h2 {
+      color: #306998;
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .course-level p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #e0ecf0;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .continue {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .next-button {
+      padding: 14px 30px;
+      background-color: #306998;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: #28557a;
+      transform: translateY(-3px);
+    }
+  </style>
+    <div class="return">
+        <a href="amr-ahmed.html" title="Back to Homepage">
+        <i class='bx bx-left-arrow-alt'></i>Back to courses</a>
+    </div>
+</head>
+<body>
+  <div class="container">
+    <h1><i class='bx bxl-python'></i> Welcome to Your Python Journey</h1>
+
+    <div class="video-placeholder">
+        <video width="640" height="360" controls>
+            <source src="python-VEED.mp4" controls autoplay muted type="video/mp4">
+    </div>
+
+    <div class="course-level">
+      <h2>Level 1: Introduction to Python</h2>
+      <p>Learn what Python is and run your first command: <code>print("Hello, Python!")</code></p>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 2: Variables & Data Types</h2>
+      <p>Work with <code>int</code>, <code>float</code>, <code>str</code>, and discover how Python stores and handles data.</p>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 3: Control Flow</h2>
+      <p>Make decisions with <code>if</code> statements and repeat actions using <code>for</code> or <code>while</code> loops.</p>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 4: Functions</h2>
+      <p>Organize your code into reusable blocks with <code>def</code> and parameterized logic.</p>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 5: Lists & Dictionaries</h2>
+      <p>Manage collections of data using <code>[]</code> for lists and <code>{}</code> for dictionaries.</p>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 6: File Handling</h2>
+      <p>Open, read, and write files with <code>open()</code> to store user input and program results.</p>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 7: Final Project</h2>
+      <p>Use all your knowledge to build a complete Python app. It’s time to show off. 🔥</p>
+    </div>
+
+    <div class="continue">
+      <button type="button" class="next-button">Start the journey 🧭</button>
+    </div>
+  </div>
+</body>
+</html>

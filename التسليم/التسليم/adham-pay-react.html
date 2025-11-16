@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="style.css"/>
+  <title>payment page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3fafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .payment-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .visa{
+      width: 300px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+
+    .payment-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .form-row input {
+      flex: 1;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2d75e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c5bbf;
+    }
+    .aa{ position: absolute;
+    top: 24px;
+    left: 24px;
+   text-decoration: none;
+   color: blue;
+
+
+    
+}
+  </style>
+</head>
+<body>
+  <a href="amr-ahmed.html" class="aa">go back</a>
+
+  <div class="payment-container">
+    <img src="visa.jpg" alt="viisa" class="visa">
+    <form id="visaForm" action="React courses.html" class="payment-form" onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Card Number"  pattern="\d{16}" maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/g, '')"required />
+      <div class="form-row">
+        <input type="text" placeholder="MM"  pattern="\d{2}" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,2)" required/>
+        <input type="text" placeholder="YY"  pattern="\d{2}" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,2)" required/>
+        <input type="text" placeholder="CVV" " pattern="\d{3}" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,3)" maxlength="3" required />
+        
+      </div>
+      <button type="submit" >Pay Now</button>
+    </form>
+</div>
+</body>
+</html>

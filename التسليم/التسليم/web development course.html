@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development Course Intro</title>
+  <style>
+      .return {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.return a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+}
+
+.return a:hover {
+    text-decoration: underline;
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .video-placeholder {
+      height: 400px;
+      background: rgba(236, 240, 241, 0.9);
+      border: 2px dashed #3498db;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .course-level {
+      background-color: rgba(236, 240, 241, 0.9);
+      padding: 20px;
+      border-left: 5px solid #3498db;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .course-level h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #2c3e50;
+    }
+
+    .course-level p {
+      color: #34495e;
+    }
+
+    .continue {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .next-button {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+  <div class="return">
+    <a href="amr-ahmed.html" title="Back to Homepage">
+    <i class='bx bx-left-arrow-alt'></i>Back to courses</a>
+</div>
+</head>
+<body>
+  <div class="container">
+    <h1>Web Development Bootcamp</h1>
+    <div class="video-placeholder">
+      <video controls>
+        <source src="videos/web-dev-intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="course-level">
+      <h2>Level 1: HTML & CSS</h2>
+      <p>Learn how to structure content and style it beautifully.</p>
+    </div>
+    <div class="course-level">
+      <h2>Level 2: Responsive Design</h2>
+      <p>Make your websites look good on any device.</p>
+    </div>
+    <div class="course-level">
+      <h2>Level 3: JavaScript Basics</h2>
+      <p>Start scripting and make your pages dynamic.</p>
+    </div>
+    <div class="course-level">
+      <h2>Level 4: Backend Intro</h2>
+      <p>Explore server-side basics like Node.js and Express.</p>
+    </div>
+
+    <div class="continue">
+      <button class="next-button">Build the Web 🌍</button>
+    </div>
+  </div>
+</body>
+</html>

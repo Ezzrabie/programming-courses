@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta name="author" content="Amr">
+        <title>Courses</title>
+        <style>
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #f5f5f5;
+    --text-color: #333333;
+    --accent-color: #2196f3;
+    --hover-color: #1976d2;
+    --card-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.container-head-f {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    flex-wrap: wrap;
+}
+@keyframes slideup {
+    from {transform: translatey(50px);}
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    animation-name: slideup;
+    animation-duration: 2s;
+    height: 60px;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--text-color);
+    display: grid;
+    font-size: 1.1em;
+    font-weight: 0;
+    margin: 0 50px 0 0;
+    animation-name: slideup;
+    animation-duration: 2s;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    animation-name: slideup;
+    animation-duration: 2s;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: 0;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    padding: 4px 8px;
+}
+
+.nav-bar a:hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+.container-about-us-conects-us {
+    background-color:#555;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;    
+    display: flex;   
+    width: 100%;
+    gap: 30px;
+    margin-top:200px;
+}
+
+.container-about-us-conects-us a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 1.4em;
+    transition: color 0.3s ease;
+}
+
+.container-about-us-conects-us a:hover {
+    color: var(--accent-color);
+}
+
+
+.courses{
+                display: grid;
+                grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+                gap: 25px;
+         }
+            .course-card{
+                background: #e8e8e8;
+                border-radius: 20px;
+                padding: 20px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                transition: 0.3s ease;
+                text-align: center;
+            }
+            .course-card:hover {
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
+                background-color: rgb(190, 190, 190);
+            }
+            .course-card img {
+                width: 64px;
+                height: 64px;
+                object-fit: contain;
+                margin-bottom: 16px;
+            }
+            .course-card h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: #222;
+            }
+            .course-card p {
+                font-size: 14px;
+                color: #555;
+            }
+            .rating {
+                color: #FFD700;
+                font-size: 18px;
+                margin: 8px 0;
+            }
+            .pay-button {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 10px 20px;
+                background-color: #007BFF;
+                color: white;
+                text-decoration: none;
+                border-radius: 12px;
+                transition: background-color 0.3s ease;
+            }
+            .pay-button:hover {
+                background-color: #0056b3;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container-head-f">
+            <header class="header">
+                <div class="logo">
+                    <h2>E-learning platform</h2>
+                </div>
+                <div class="nav-bar">
+                    <a href="marwan-body2.html">Home</a>
+                    <a href="emad-body.html">Log Out</a>
+                </div>
+            </header>
+        </div>
+    
+        <div>
+            <div class="header">
+                <h1>Courses</h1>
+            </div>
+            <div class="courses">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <img src="python.png" alt="python">
+                    <h2>Python</h2>
+                    <p>Learn the basics of Python programming </p>
+                    <div class="rating">&#9733 &#9733 &#9733 &#9733 &#9733</div>
+                    <h4>Price : <del>200$</del> / <mark> 99$ </mark></h4>
+                    <a href="adham-pay-python.html" class="pay-button">Pay Now</a>
+                </div>
+                <!-- Course 2 -->
+                 <div class="course-card">
+                    <img src="source-code.png" alt="Web Development">
+                    <h2>Web Development</h2>
+                    <p>Build modern websites using HTML, CSS, and JavaScript.</p>
+                    <div class="rating">&#9733 &#9733 &#9733 &#9733 &#9734</div>
+                    <h4>Price : <del>150$</del> / <mark>90$ </mark></h4>
+                    <a href="adham-pay-web.html" class="pay-button">Pay Now</a>
+                 </div>
+                 <!-- Course 3 -->
+                  <div class="course-card">
+                    <img src="java pic.png" alt="java">
+                    <h2>Java</h2>
+                    <p>Understand the core concepts of Java</p>
+                    <div class="rating">&#9733 &#9733 &#9733 &#9733 &#9733</div>
+                    <h4>Price : <del>110</del> / <mark>80$</mark></h4>
+                    <a href="adham-pay-java.html" class="pay-button">Pay Now</a>
+                  </div>
+                  <!-- Course 4 -->
+                   <div class="course-card">
+                    <img src="react.png" alt="React">
+                    <h2>React</h2>
+                    <p>Get started with React library for building user interfaces</p>
+                    <div class="rating">&#9733 &#9733 &#9733 &#9733 &#9734</div>
+                    <h4>Price : <del>100</del> / <mark>70$</mark></h4>
+                    <a href="adham-pay-react.html" class="pay-button">Pay Now</a>
+                   </div>
+                  <!-- Course 5 -->
+                   <div class="course-card">
+                    <img src="sql.png" alt="sql">
+                    <h2>SQL</h2>
+                    <p>Learn the fundamentals of SQL and database management</p>
+                    <div class="rating">&#9733 &#9733 &#9733 &#9733 &#9733</div>
+                    <h4>Price : <del>140</del> / <mark> 75$</mark></h4>
+                    <a href="adham-pay-sql.html" class="pay-button">Pay Now</a>
+                   </div> 
+            </div>
+        </div> 
+        
+        <div class="container-about-us-conects-us">
+            <a href="amr-ashor-in.html" title="Contact Us">About Us</a>
+            <a href="‏‏mohamed-help-in .html" title="Need help?">Help</a>
+        </div>
+    </body>
+</html>
