@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="test -helan.css">
+     
+    <title>E-learning platform</title>
+    </head>
+<body>
+    <div class="container-head-f">
+        <header class="header">
+            <div class="logo">
+                <h2>E-learning platform</h2>
+            </div>
+            <div class="nav-bar">
+                <a href="#">Home</a>
+                <a href="omar_login.html">Courses</a>
+                <a href="omar_login.html">Login</a>
+                <a href="ezz-sign-up.html">Signup</a>
+                <img src="moon.png" id="icon">
+            </div>
+        </header>
+        <div class="body-1">
+            <h1>E-learning platform</h1>
+            <p>an online platform for learning to achieve your goals</p>
+            <a href="ezz-sign-up.html">sign up</a>
+        </div>
+    </div>
+    <div class="container-body-2">
+        <div>
+            <div class="header-corse">
+                <h1>Courses</h1>
+            </div>
+            <div class="courses-container">
+                <div class="courses">
+                    <!-- Course 1 -->
+                    <div class="course-card">
+                        <img src="python.png" alt="python">
+                        <h2>Python</h2>
+                        <p>Learn the basics of Python programming</p>
+                        <a href="omar_login.html">view course</a>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="course-card">
+                        <img src="source-code.png" alt="Web Development">
+                        <h2>Web Development</h2>
+                        <p>Build modern websites using HTML, CSS, and JavaScript.</p>
+                        <a href="omar_login.html">view course</a>
+                    </div>
+                    <!-- Course 3 -->
+                    <div class="course-card">
+                        <img src="java pic.png" alt="java">
+                        <h2>java Fundamentals</h2>
+                        <p>Understand the core concepts of java</p>
+                        <a href="omar_login.html">view course</a>
+                    </div>
+                    <!-- Course 4 -->
+                    <div class="course-card">
+                        <img src="react.png" alt="React">
+                        <h2>React</h2>
+                        <p>Get started with React library for building user interfaces</p>
+                        <a href="omar_login.html">view course</a>
+                    </div>
+                    <!-- Course 5 -->
+                    <div class="course-card">
+                        <img src="sql.png" alt="sql">
+                        <h2>SQL</h2>
+                        <p>Learn the fundamentals of SQL and database management</p>
+                        <a href="omar_login.html">view course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th><img src="python.png" alt="Course 1"><br><a href="omar_login.html">Python </a></th>
+                <th><img src="source-code.png" alt="Course 2"><br><a href="omar_login.html">Web Development</a></th>
+                <th><img src="java pic.png" alt="Course 3"><br><a href="omar_login.html">Java</a></th>
+                <th><img src="react.png" alt="Course 4"><br><a href="omar_login.html">React</a></th>
+                <th><img src="sql.png" alt="Course 5"><br><a href="omar_login.html">SQL</a></th>
+            </tr>
+            <tr>
+                <td>$99</td>
+                <td>$90</td>
+                <td>$80</td>
+                <td>$70</td>
+                <td>$75</td>
+            </tr>
+            <tr>
+                <td>3 Weeks</td>
+                <td>1 Month</td>
+                <td>2 Weeks</td>
+                <td>4 Weeks</td>
+                <td>3 Weeks</td>
+            </tr>
+            <tr>
+                <td class="easy">Easy</td>
+                <td class="medium">Medium</td>
+                <td class="hard">Hard</td>
+                <td class="medium">Medium</td>
+                <td class="easy">Easy</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container-about-us-conects-us">
+        <a href="amr-ashor.html" class="" title="About Us">About Us</a>
+        <a href="mohamed-help.html" class="" title="Contact Us">Contact Us</a>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src= "sun.png";
+            }
+            else{
+                icon.src= "moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
